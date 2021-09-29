@@ -1,0 +1,28 @@
+{
+    "require": {
+        "bramus/router": "~1.5",
+        "firebase/php-jwt": "^5.2",
+        "twbs/bootstrap": "5.0.0-beta3",
+        "phpmailer/phpmailer": "^6.4",
+        "facebook/graph-sdk": "^5.7",
+        "php-http/curl-client": "^2.2",
+        "guzzlehttp/psr7": "^1.8",
+        "google/apiclient": "2.7"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "app/"
+    	},
+        "classmap": [
+            "./"
+        ]
+    },
+    "scripts": {
+        "post-update-cmd": "Google_Task_Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Oauth2"
+        ]
+    }
+}
